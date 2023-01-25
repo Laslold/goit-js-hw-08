@@ -1,0 +1,50 @@
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 460px;
+  width: 405px;
+  margin: auto;
+  padding: 40px 60px;
+  background: #505050;
+  background-size: cover;
+  box-shadow: 0px 30px 60px -5px #000;
+}
+
+.feedback-form label {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.feedback-form button {
+  width: 100%;
+  padding: 10px 20px;
+  display: block;
+  height: 39px;
+  border-radius: 20px;
+  margin-top: 30px;
+  border: none;
+  text-transform: uppercase;
+  font: inherit;
+}
+.feedback-form button:hover {
+  background: #04ff00;
+  box-shadow: 0px 4px 35px -5px #04ff00;
+  cursor: pointer;
+}
+
+.feedback-form button:focus {
+  outline: none;
+}
+input,
+textarea {
+  margin-top: 10px;
+  padding: 8px;
+  font: inherit;
+}
+
+textarea {
+  resize: none;
+}
