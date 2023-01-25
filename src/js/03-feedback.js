@@ -15,7 +15,16 @@ if (data) {
 
 function formSubmit(evt) {
   evt.preventDefault();
-  console.log(JSON.parse(localStorage.getItem(DATA_KEY)));
+  const userData = {};
+  for (let index = 0; index < evt.target.elements.length; index++) {
+    const elem = evt.target.elements[index];
+    if (elem.nodeName === 'INPUT' || elem.nodeName === 'TEXTAREA') {
+      userData[elem.name] = elem.value;
+    }
+  }
+
+  console.log(userData);
+  // console.log(JSON.parse(localStorage.getItem(DATA_KEY)));
   evt.currentTarget.reset();
   localStorage.removeItem(DATA_KEY);
 }
